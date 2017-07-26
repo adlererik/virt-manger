@@ -11,6 +11,7 @@ X-Python-Version: 2.7
 Build-Depends: debhelper (>= 10~), python-all,
  intltool,
  libglib2.0-bin,
+ dh-python,
 
 Package: virt-manager
 Architecture: all
