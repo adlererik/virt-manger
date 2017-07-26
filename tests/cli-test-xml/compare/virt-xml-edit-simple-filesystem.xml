@@ -1,0 +1,16 @@
+     <controller type="ide" index="0"/>
+     <controller type="virtio-serial" index="0"/>
+     <controller type="ccid" index="0"/>
+-    <filesystem type="mount" accessmode="passthrough">
++    <filesystem type="mount" accessmode="mapped">
+       <driver type="handle"/>
+-      <source dir="/foo/bar"/>
+-      <target dir="/bar/baz"/>
++      <source dir="/1/2/3"/>
++      <target dir="/4/5/6"/>
+     </filesystem>
+     <interface type="network">
+       <mac address="22:22:33:54:32:10"/>
+
+Domain 'test-for-virtxml' defined successfully.
+Changes will take effect after the next domain shutdown.

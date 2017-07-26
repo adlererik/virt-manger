@@ -1,0 +1,11 @@
+       <source mode="connect" host="localhost" service="4000"/>
+       <protocol type="raw"/>
+     </redirdev>
+-    <watchdog model="ib700" action="poweroff"/>
++    <watchdog model="ib700" action="reset"/>
+     <memballoon model="virtio"/>
+     <rng model="virtio">
+       <rate bytes="1234" period="2000"/>
+
+Domain 'test-for-virtxml' defined successfully.
+Changes will take effect after the next domain shutdown.

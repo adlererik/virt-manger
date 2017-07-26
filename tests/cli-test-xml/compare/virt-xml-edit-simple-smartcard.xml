@@ -1,0 +1,11 @@
+       <script path="/etc/qemu-ifup"/>
+       <target dev="nic02"/>
+     </interface>
+-    <smartcard mode="host">
++    <smartcard mode="host" type="spicevmc">
+       <address type="ccid" controller="0" slot="0"/>
+     </smartcard>
+     <serial type="null">
+
+Domain 'test-for-virtxml' defined successfully.
+Changes will take effect after the next domain shutdown.

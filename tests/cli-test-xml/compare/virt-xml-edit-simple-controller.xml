@@ -1,0 +1,11 @@
+       <boot order="1"/>
+       <address type="drive" controller="9" bus="0" target="0" unit="0"/>
+     </disk>
+-    <controller type="scsi" index="0"/>
++    <controller type="scsi" index="15" model="lsilogic"/>
+     <controller type="scsi" index="1"/>
+     <controller type="scsi" index="2"/>
+     <controller type="scsi" index="3"/>
+
+Domain 'test-for-virtxml' defined successfully.
+Changes will take effect after the next domain shutdown.

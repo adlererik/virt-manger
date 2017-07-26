@@ -1,0 +1,11 @@
+       <address type="isa" iobase="0x505"/>
+     </panic>
+   </devices>
+-  <seclabel type="dynamic" model="selinux" relabel="yes"/>
++  <seclabel type="dynamic" model="selinux" relabel="yes">
++    <label>foo,bar,baz,UNKNOWN=val</label>
++  </seclabel>
+ </domain>
+
+Domain 'test-for-virtxml' defined successfully.
+Changes will take effect after the next domain shutdown.

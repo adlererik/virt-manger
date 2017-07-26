@@ -1,0 +1,10 @@
+     </graphics>
+     <sound model="sb16"/>
+     <sound model="es1370"/>
+-    <sound model="ich6"/>
+     <video>
+       <model type="vmvga" vram="16384" heads="1" primary="yes"/>
+     </video>
+
+Domain 'test-for-virtxml' defined successfully.
+Changes will take effect after the next domain shutdown.

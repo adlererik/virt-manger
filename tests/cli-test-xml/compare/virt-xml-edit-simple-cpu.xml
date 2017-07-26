@@ -1,0 +1,22 @@
+     </hyperv>
+   </features>
+   <cpu mode="custom" match="exact">
+-    <model fallback="allow">core2duo</model>
++    <model fallback="allow">pentium2</model>
+     <vendor>Intel</vendor>
+-    <feature policy="require" name="pbe"/>
++    <feature policy="forbid" name="pbe"/>
+     <feature policy="require" name="tm2"/>
+     <feature policy="require" name="est"/>
+     <feature policy="require" name="ss"/>
+@@
+       <cell id="2" cpus="2" memory="1048576" unit="KiB"/>
+       <cell id="3" cpus="3" memory="1048576" unit="KiB"/>
+     </numa>
++    <feature policy="force" name="x2apic"/>
+   </cpu>
+   <clock offset="utc">
+     <timer name="rtc" tickpolicy="catchup"/>
+
+Domain 'test-for-virtxml' defined successfully.
+Changes will take effect after the next domain shutdown.

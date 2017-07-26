@@ -1,0 +1,13 @@
+     <serial type="null">
+       <target port="0"/>
+     </serial>
+-    <parallel type="file">
+-      <source path="/tmp/foo.log"/>
++    <parallel type="unix">
++      <source path="/some/other/log"/>
+       <target port="0"/>
+     </parallel>
+     <console type="null">
+
+Domain 'test-for-virtxml' defined successfully.
+Changes will take effect after the next domain shutdown.

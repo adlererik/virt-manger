@@ -1,0 +1,12 @@
+     </numa>
+   </cpu>
+   <clock offset="utc">
+-    <timer name="rtc" tickpolicy="catchup"/>
+-    <timer name="pit" tickpolicy="delay"/>
+-    <timer name="hpet" present="no"/>
+   </clock>
+   <on_poweroff>destroy</on_poweroff>
+   <on_reboot>restart</on_reboot>
+
+Domain 'test-for-virtxml' defined successfully.
+Changes will take effect after the next domain shutdown.
