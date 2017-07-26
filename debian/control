@@ -1,0 +1,61 @@
+Source: virt-manager
+Section: admin
+Priority: optional
+Maintainer: Erik Adler <erik.adler@gmail.com>
+Uploaders: Guido Günther <agx@sigxcpu.org>, Laurent Léonard <laurent@open-minds.org>
+Standards-Version: 4.0.0
+Vcs-Git: https://anonscm.debian.org/git/pkg-libvirt/virt-manager.git
+Vcs-Browser: https://anonscm.debian.org/cgit/pkg-libvirt/virt-manager.git
+Homepage: http://virt-manager.et.redhat.com/
+X-Python-Version: 2.7
+Build-Depends: debhelper (>= 10~), python-all,
+ intltool,
+ libglib2.0-bin,
+
+Package: virt-manager
+Architecture: all
+Depends: ${misc:Depends}, ${python:Depends},
+ python-gi,
+ python-gi-cairo,
+ python-dbus,
+ python-requests,
+ librsvg2-common,
+ python-libvirt (>= 0.7.1),
+ gir1.2-libvirt-glib-1.0,
+ gir1.2-gtk-vnc-2.0,
+ gir1.2-gtk-3.0 (>= 3.10),
+ gir1.2-vte-2.91,
+ gir1.2-libosinfo-1.0,
+ virtinst (>= ${binary:Version}),
+# For gsettings-data-convert
+ gconf2,
+Recommends: libvirt-daemon-system (>= 1.2.7), gnome-icon-theme,
+ gir1.2-spice-client-gtk-3.0,
+Suggests: virt-viewer, ssh-askpass, gnome-keyring, gir1.2-secret-1,
+ python-guestfs
+Description: desktop application for managing virtual machines
+ It presents a summary view of running domains and their live performance &
+ resource utilization statistics. A detailed view presents graphs showing
+ performance & utilization over time. Ultimately it will allow creation of new
+ domains, and configuration & adjustment of a domain's resource allocation &
+ virtual hardware.  Finally an embedded VNC client viewer presents a full
+ graphical console to the guest domain.
+ .
+ NOTE: the GUI is still considered experimental.
+
+Package: virtinst
+Architecture: all
+Depends: ${python:Depends}, ${shlibs:Depends}, ${misc:Depends}, python-libvirt (>= 0.4.6),
+ python-gi,
+ python-ipaddr,
+ python-libxml2, python-requests,
+ gir1.2-libosinfo-1.0,
+Recommends: virt-viewer, qemu-utils
+Description: Programs to create and clone virtual machines
+ Virtinst is a set of commandline tools to create virtual machines using
+ libvirt:
+ .
+ virt-install: provision new virtual machines 
+ virt-clone: clone existing virtual machines
+ virt-image: create virtual machines from an image description
+ virt-convert: convert virtual machines between formats

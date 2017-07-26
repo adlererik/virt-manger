@@ -1,0 +1,71 @@
+From: =?utf-8?q?Guido_G=C3=BCnther?= <agx@sigxcpu.org>
+Date: Sat, 24 Dec 2016 01:18:30 +0100
+Subject: Use /usr/bin/python
+
+so we don't have to worry about picking up the wrong version
+---
+ setup.py             | 2 +-
+ tests/test_inject.py | 2 +-
+ virt-clone           | 2 +-
+ virt-convert         | 2 +-
+ virt-install         | 2 +-
+ virt-manager         | 2 +-
+ virt-xml             | 2 +-
+ 7 files changed, 7 insertions(+), 7 deletions(-)
+
+--- a/setup.py
++++ b/setup.py
+@@ -1,4 +1,4 @@
+-#!/usr/bin/env python2
++#!/usr/bin/python
+ # Copyright (C) 2013, 2014 Red Hat, Inc.
+ 
+ import glob
+--- a/tests/test_inject.py
++++ b/tests/test_inject.py
+@@ -1,4 +1,4 @@
+-#!/usr/bin/env python2
++#!/usr/bin/python
+ # Copyright (C) 2013, 2014 Red Hat, Inc.
+ 
+ import atexit
+--- a/virt-clone
++++ b/virt-clone
+@@ -1,4 +1,4 @@
+-#!/usr/bin/env python2
++#!/usr/bin/python
+ #
+ # Copyright(c) FUJITSU Limited 2007.
+ #
+--- a/virt-convert
++++ b/virt-convert
+@@ -1,4 +1,4 @@
+-#!/usr/bin/env python2
++#!/usr/bin/python
+ #
+ # Copyright 2008, 2013, 2014  Red Hat, Inc.
+ # Joey Boggs <jboggs@redhat.com>
+--- a/virt-install
++++ b/virt-install
+@@ -1,4 +1,4 @@
+-#!/usr/bin/env python2
++#!/usr/bin/python
+ #
+ # Copyright 2005-2014 Red Hat, Inc.
+ #
+--- a/virt-manager
++++ b/virt-manager
+@@ -1,4 +1,4 @@
+-#!/usr/bin/env python2
++#!/usr/bin/python
+ #
+ # Copyright (C) 2006, 2014 Red Hat, Inc.
+ # Copyright (C) 2006 Daniel P. Berrange <berrange@redhat.com>
+--- a/virt-xml
++++ b/virt-xml
+@@ -1,4 +1,4 @@
+-#!/usr/bin/env python2
++#!/usr/bin/python
+ #
+ # Copyright 2013-2014 Red Hat, Inc.
+ # Cole Robinson <crobinso@redhat.com>
